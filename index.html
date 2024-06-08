@@ -4,82 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jawahar Education Society's Institute of Technology, Management & Research, Nashik</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- REMIXICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <style>
-        /* Video news*/
-        .left-column {
-            background-color: #f8f9fa;
-            padding: 20px;
-        }
-        .left-column .nav-link {
-            color: black;
-            background-color: lightgrey;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .left-column p {
-            background-color: #900;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .middle-column {
-            padding: 20px;
-        }
-        .middle-column p {
-            background-color: #900;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .right-column {
-            background-color: #f8f9fa;
-            padding: 20px;
-        }
-        .right-column p {
-            background-color: #900;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .news-event {
-            height: 400px;
-            overflow-y: scroll;
-        }
-        .news-event .media {
-            background-color: lightgrey;
-            color: black;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-   /*-------*/
         .header-content {
             display: flex;
             align-items: center;
@@ -234,6 +169,7 @@
         footer .list-inline {
             margin: 0;
             padding: 0;
+            padding-left: 100px;
         }
         footer .list-inline-item {
             margin-right: 10px;
@@ -284,7 +220,7 @@
         }
         .mySlides img {
             width: 100%;
-            height: 400px;
+            height: 500px;
             object-fit: cover;
         }
         .prev, .next {
@@ -313,53 +249,152 @@
                 height: 200px;
             }
         }
-
-        .news-carousel {
-            background-color: #343a40;
-            border-radius: 10px;
+        .left-column {
+            background-color: #f8f9fa;
             padding: 20px;
         }
-        .news-item {
-            background-color: #495057;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 10px 0;
-            color: white;
-            display: flex;
-            align-items: center;
-            transition: background-color 0.3s;
+        .left-column .nav-link {
+            color: black;
+            background-color: lightgrey;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
         }
-        .news-item:hover {
-            background-color: #6c757d;
-        }
-        .news-item img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-right: 15px;
-            border: 2px solid #900;
-        }
-        .news-title {
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
+        .left-column p {
             background-color: #900;
-            border-radius: 50%;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
         }
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 5%;
+        .middle-column {
+            padding: 20px;
+        }
+        .middle-column p {
+            background-color: #900;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .right-column {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .right-column p {
+            background-color: #900;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .news-event {
+            height: 400px;
+            overflow-y: scroll;
+        }
+        .news-event .media {
+            background-color: lightgrey;
+            color: black;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .box1 {
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes scale {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        .logos {
+            overflow: hidden;
+            padding: 40px 0;
+            background-color: white;
+            white-space: nowrap;
+            position: relative;
+            max-width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .logos:before,
+        .logos:after {
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            content: "";
+            z-index: 2;
+        }
+        .logos:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(243, 82, 82, 0.8));
+        }
+        .logos:after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(243, 82, 82, 0.8));
+        }
+        .logos:hover .logos-slide {
+            animation-play-state: paused;
+        }
+        .logos-slide {
+            display: inline-block;
+            animation: 25s slide infinite linear;
+        }
+        .logos-slide img {
+            height: 50px;
+            margin: 0 20px;
+            animation: 10s scale infinite ease-in-out;
+            transition: transform 0.3s;
+        }
+        .logos-slide img:hover {
+            transform: scale(1.2);
         }
         @media (max-width: 768px) {
-            .news-item {
-                flex-direction: column;
-                text-align: center;
+            .logos-slide img {
+                height: 40px;
+                margin: 0 15px;
             }
-            .news-item img {
-                margin-bottom: 10px;
+            .logos:before, .logos:after {
+                width: 100px;
+            }
+        }
+        @media (max-width: 480px) {
+            .logos-slide img {
+                height: 30px;
+                margin: 0 10px;
+            }
+            .logos:before, .logos:after {
+                width: 50px;
             }
         }
     </style>
@@ -384,25 +419,25 @@
     </header>
 
     <nav class="navbar navbar-expand-lg ">
-       
+        <a class="navbar-brand" href="#">Brand</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="margin-left: 20px;"> Home</a>
+                    <a class="nav-link" href="#"> Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          About JIT
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-1">
-                        <a class="dropdown-item" href="whyjit.html">Why JIT</a>
-                        <a class="dropdown-item" href="vision.html">Vision and Mission</a>
-                        <a class="dropdown-item" href="core.html">Core Values</a>
-                        <a class="dropdown-item" href="approvals.html">AICTE Approvals</a>
-                        <a class="dropdown-item" href="committee.html">Committee</a>
+                        <a class="dropdown-item" href="courses.html">Why JIT</a>
+                        <a class="dropdown-item" href="cse.html">Vision and Mission</a>
+                        <a class="dropdown-item" href="eee.html">Core Values</a>
+                        <a class="dropdown-item" href="civil.html">AICTE Approvals</a>
+                        <a class="dropdown-item" href="textile.html">Committee</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -410,74 +445,74 @@
                          ADMISSION
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
-                        <a class="dropdown-item" href="firstengg.html">First Year Engineering</a>
-                        <a class="dropdown-item" href="dse.html">Direct Second Year Engineering (Against Vacancies)</a>
-                        <a class="dropdown-item" href="admission.html">Admission Procedure</a>
-                        <a class="dropdown-item" href="faqs.html">FAQS</a>
-                        <a class="dropdown-item" href="payment.html">Online Payment Link</a>
+                        <a class="dropdown-item" href="courses.html">First Year Engineering</a>
+                        <a class="dropdown-item" href="cse.html">Direct Second Year Engineering (Against Vacancies)</a>
+                        <a class="dropdown-item" href="eee.html">Admission Procedure</a>
+                        <a class="dropdown-item" href="civil.html">FAQS</a>
+                        <a class="dropdown-item" href="textile.html">Online Payment Link</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="gallery.html"> PHOTO GALLERY</a>
+                    <a class="nav-link" href="#"> PHOTO GALLERY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="alumni.html"> ALUMNI</a>
+                    <a class="nav-link" href="#"> ALUMNI</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          DEPARTMENTS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-5">
-                        <a class="dropdown-item" href="Deptcomp.html">Department of Computer Engineering</a>
-                        <a class="dropdown-item" href="Deptcivil.html">Department of Civil Engineering</a>
-                        <a class="dropdown-item" href="Deptmech.html">Department of Mechanical Engineering</a>
-                        <a class="dropdown-item" href="Deptele.html">Department of Electrical Engineering</a>
-                        <a class="dropdown-item" href="DeptIt.html">Department of Information Technology</a>
-                        <a class="dropdown-item" href="DeptAI.html">Department of Artificial Intelligence & Data Science</a>
-                        <a class="dropdown-item" href="DeptEle&comp.html">Department of Electronics & Computer Engineering</a>
-                        <a class="dropdown-item" href="Appliedscience.html">Applied Science & Humanities</a>
-                        <a class="dropdown-item" href="Library.html">Library</a>
-                       
+                        <a class="dropdown-item" href="courses.html">Department of Computer Engineering</a>
+                        <a class="dropdown-item" href="cse.html">Department of Civil Engineering</a>
+                        <a class="dropdown-item" href="eee.html">Department of Mechanical Engineering</a>
+                        <a class="dropdown-item" href="civil.html">Department of Electrical Engineering</a>
+                        <a class="dropdown-item" href="textile.html">Department of Information Technology</a>
+                        <a class="dropdown-item" href="mech.html">Department of Artificial Intelligence & Data Science</a>
+                        <a class="dropdown-item" href="eee.html">Department of Electronics & Computer Engineering</a>
+                        <a class="dropdown-item" href="civil.html">Applied Science & Humanities</a>
+                        <a class="dropdown-item" href="textile.html">Library</a>
+                        <a class="dropdown-item" href="mech.html">Training and Placement</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="TraningAndPlacement.html"> T&P</a>
+                    <a class="nav-link" href="#"> T&P</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          STUDENT CORNER
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-6">
-                        <a class="dropdown-item" href="NSS.html">N.S.S.</a>
-                        <a class="dropdown-item" href="sports.html">SPORTS</a>
-                        <a class="dropdown-item" href="culutural.html">CULTURAL</a>
-                        <a class="dropdown-item" href="SYLLABUS.html">SYLLABUS</a>
-                        <a class="dropdown-item" href="EXAM.html">SPPU EXAM</a>
-                        <a class="dropdown-item" href="RESULTS.html">RESULTS</a>
-                        <a class="dropdown-item" href="MIGRATION.html">MIGRATION CERTIFICATE</a>
-                        <a class="dropdown-item" href="CONVOCATION.html">CONVOCATION</a>
-                        <a class="dropdown-item" href="SWAYAM.html">SWAYAM & NPTEL</a>
-                        <a class="dropdown-item" href="AICTE.html">AICTE e-KUMBH</a>
-                        <a class="dropdown-item" href="SCHOLERSHIP.html">SCHOLERSHIP</a>
+                        <a class="dropdown-item" href="courses.html">N.S.S.</a>
+                        <a class="dropdown-item" href="cse.html">SPORTS</a>
+                        <a class="dropdown-item" href="eee.html">CULTURAL</a>
+                        <a class="dropdown-item" href="civil.html">SYLLABUS</a>
+                        <a class="dropdown-item" href="textile.html">SPPU EXAM</a>
+                        <a class="dropdown-item" href="mech.html">RESULTS</a>
+                        <a class="dropdown-item" href="courses.html">MIGRATION CERTIFICATE</a>
+                        <a class="dropdown-item" href="cse.html">CONVOCATION</a>
+                        <a class="dropdown-item" href="eee.html">SWAYAM & NPTEL</a>
+                        <a class="dropdown-item" href="civil.html">AICTE e-KUMBH</a>
+                        <a class="dropdown-item" href="textile.html">SCHOLERSHIP</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="BEST.html"> BEST PRACTICES</a>
+                    <a class="nav-link" href="#"> BEST PRACTICES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="CONTACT.html"> CONTACT US</a>
+                    <a class="nav-link" href="#"> CONTACT US</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ENQUIRY.html"> ENQUIRY</a>
+                    <a class="nav-link" href="#"> ENQUIRY</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          ABOUT ERP
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
-                        <a class="dropdown-item" href="ERP.html">ERP System</a>
-                        <a class="dropdown-item" href="Leave.html">Leave Management System</a>
-                        <a class="dropdown-item" href="Student.html">Student Registration System</a>
+                        <a class="dropdown-item" href="courses.html">ERP System</a>
+                        <a class="dropdown-item" href="cse.html">Leave Management System</a>
+                        <a class="dropdown-item" href="eee.html">Student Registration System</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -485,9 +520,9 @@
                          NAAC
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
-                        <a class="dropdown-item" href="SSR.html">SSR</a>
-                        <a class="dropdown-item" href="NAAC.html">NAAC Cycle 1</a>
-                        <a class="dropdown-item" href="AQAR.html">AQAR 22-23</a>
+                        <a class="dropdown-item" href="courses.html">SSR</a>
+                        <a class="dropdown-item" href="cse.html">NAAC Cycle 1</a>
+                        <a class="dropdown-item" href="eee.html">AQAR 22-23</a>
                     </div>
                 </li>
             </ul>
@@ -500,10 +535,10 @@
 
     <div class="slideshow-container">
         <div class="mySlides">
-            <img src="assets/img/index/atv_car1.JPG" alt="Image 1">
+            <img src="assets/img/index/DSC_4328.JPG" alt="Image 1" >
         </div>
         <div class="mySlides">
-            <img src="assets/img/index/atv_car2.JPG" alt="Image 2">
+            <img src="assets/img/index/DSC_4365.JPG" alt="Image 2">
         </div>
         <div class="mySlides">
             <img src="assets/img/index/atv_car3.JPG" alt="Image 3">
@@ -511,14 +546,6 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <div class="container-fluid">
         <div class="row">
@@ -569,57 +596,74 @@
             </div>
         </div>
     </div>
- <h1 class="text-center mb-0 mt-5 " style="color: #900;">Our Recruiters</h1>
-    <div class="clients">
-      
-      <div class="logos">
-        <hr style="color: #900;background-color: #900;">
-          <div class="logos-slide">
-              <img src="images/logo/download.jpg" alt="">
-              <img src="images/logo/Ebco_Logo.JPG" alt="">
-              <img src="images/logo/faber.jpg" alt="">
-              <img src="images/logo/hettich-logo.jpg" alt="">
-              <img src="images/logo/enox.jpg" alt="">
-              <img src="images/logo/Indoline-Furniture.jpg" alt="">
-              <img src="images/logo/index.png" alt="">
-              <img src="images/logo/Merino-logo-1.png" alt="">
-              <img src="images/logo/saint-gobain-logo.jpg" alt="">
-              <img src="images/logo/e01e1323-a63f-409f-bbbf-1d75552b92c3.jpg" alt="">
-          </div>
-          <div class="logos-slide">
-              <img src="images/logo/Bosch-logo.jpg" alt="">
-              <img src="images/logo/Ebco_Logo.JPG" alt="">
-              <img src="images/logo/faber.jpg" alt="">
-              <img src="images/logo/hettich-logo.jpg" alt="">
-              <img src="images/logo/enox.jpg" alt="">
-              <img src="images/logo/Bosch-logo.jpg" alt="">
-              <img src="images/logo/Corian-Logo.jpg" alt="">
-              <img src="images/logo/Bosch-logo.jpg" alt="">
-              <img src="images/logo/enox.jpg" alt="">
-          </div>
-          <hr style="color: #900;background-color: #900;">
-      </div>
-  </div>
 
+    <h1 class="text-center mb-0 mt-5 " style="color: #900;">Our Recruiters</h1>
+    <div class="box1">
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+            </div>
+            <div class="logos-slide">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+            </div>
+        </div>
+    </div>
+  
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5>About Us</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna. Praesent ultricies eros sit amet lorem faucibus, nec mattis nisi convallis.</p>
+                    <h5>About JIT</h5>
+                    <p>Jawahar Education Society proudly brings top-tier engineering education to Nashik with the establishment of Jawahar Education Society's Institute of Technology, Management & Research, Nashik – widely recognized as JIT Nashik. Here, innovation meets excellence, shaping the leaders of tomorrow.</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
+                <div class="col-md-4 " >
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <h5>Quick Links</h5>                   
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Glimpses</a></li>
+                        <li><a href="#">FAQs</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="#">Website Sitemap</a></li>
                     </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Facilities</h5>                   
+                    <ul class="list-unstyled">
+                        <li><a href="#">Hostel Facilities</a></li>
+                        <li><a href="#">Sports Facilities</a></li>
+                        <li><a href="#">Health Facilities</a></li>
+                        <li><a href="#">Campus Facilities</a></li>
+                        <li><a href="#">Innovation Center</a></li>
+                        <li><a href="#">Transport Facilities</a></li>
+                        
+                    </ul>
+                    </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <h5>Contact Us</h5>
-                    <p>Email: info@example.com</p>
-                    <p>Phone: +123456789</p>
+                    <p>Email:  <a href="https://google.com" target="_blank">&nbsp;principaljitnashik@gmail.com</a></p>
+                    <p>Phone: &nbsp;0253-2970077,&nbsp; 0253-2970078</p>
+                    <p>Address: <a href="https://maps.app.goo.gl/wD5wrzgvzNLYr32N6" target="_blank">&nbsp;JIT Nashik, Gangapur Road, Nashik.</a></p>
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -635,9 +679,7 @@
             <p>&copy; 2024 Jawahar Education Society's Institute of Technology, Management & Research, Nashik. All rights reserved.</p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <script>
         var slideIndex = 0;
         showSlides();
